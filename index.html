@@ -9,6 +9,24 @@
     <title>TicTacToe</title>
 </head>
 <body>
+    <img id="itsOver" class="game-over d-none" src="img/gameOver.png">
+    <button id="restartButton" class="restart-btn" onclick="restart()">Restart</button>
+    <div class="player">
+        <div id="player-1">
+            <img class="" src="img/circle.png">Player 1
+        </div>
+        <div class="player-inactiv" id="player-2">
+            <img class="" src="img/cross.png">Player 2
+        </div>
+    </div>
+    <div id="line-1" class="horizontal-line" style="top: 390px;"></div>
+    <div id="line-2" class="horizontal-line" style="top: 530px;"></div>
+    <div id="line-3" class="horizontal-line" style="top: 670px;"></div>
+    <div id="line-4" class="vertical-line" style="top:530px; transform: rotate(90deg);"></div>
+    <div id="line-5" class="vertical-line" style="top:530px; transform: rotate(90deg); margin-left: 275px;"></div>
+    <div id="line-6" class="vertical-line" style="top:530px; transform: rotate(90deg); margin-right: 285px;"></div>
+    <div id="line-7" class="cross-line" style="top: 530px; transform: rotate(135deg); width: 500px;"></div>
+    <div id="line-8" class="cross-line" style="top: 530px; transform: rotate(-135deg); width: 500px;"></div>
     <table>
         <tr>
             <td onclick="fillShape(0)"><img id="circle-0" class="shape d-none" src="img/circle.png"><img id="cross-0" class="shape d-none" src="img/cross.png"></td>
